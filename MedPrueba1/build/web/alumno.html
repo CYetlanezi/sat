@@ -11,22 +11,6 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/dentista.css" rel="stylesheet" type="text/css" />
         <script src="js/jQuery.js" type="text/js"></script>
-        <script>
-           $(document).ready(function(){
-               $(".lista ul ul").css({
-                display:"none" 
-               }); 
-               $(".lista li").hover(function(){
-                   $(this).find("ul").stop(true, true).slideDown("slow");
-               }, function(){
-                   $(this).find("ul").stop(true, true).slideUp("slow");
-              });
-            });
-            function cargar(div, desde)
-            {
-                $(div).load(desde);
-            }
-        </script>
     </head>
     <body>
             <div class="barra">
@@ -41,21 +25,12 @@ and open the template in the editor.
                         <li     <a class="listitem"><h2><img src="css/imagen/documentos.png" alt="" width="20" height="22"/>&nbsp;&nbsp;&nbsp;Documentos</h2></a></li>
                         <li>    <a class="listitem"><h2> <img src="css/imagen/citaa.png" alt="" width="20" height="22"/>&nbsp;Proxima Cita</h2></a></li>
                         <li>    <a class="listitem"><h2><img src="css/imagen/infosalud.png" alt="" width="20" height="22" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; InfoSana</h2></a></li>
-                       <li>    <a class="listitem" href="#" style="text-decoration: none" onclick="cargar('div.contenido','salir.html')"><h2><img src="css/imagen/exit.png" alt="" width="20" height="22" />Cerrar Sesion</h2></a></li>
+                        <li>    <a class="listitem" href="#" style="text-decoration: none" onclick="cargar('div.contenido','salir.html')"><h2><img src="css/imagen/exit.png" alt="" width="20" height="22" />Cerrar Sesion</h2></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="open" style="display: block"> 
+            <div class="open">
             
-                    <div class="contenido">
-                       <div class="tittle" style="background-color: #009688; height: 100%; padding-bottom: 7%">
-                          <p>Bienvenid@ a</p>
-                          <center>
-                              <img src="css/imagen/Letra.jpg" width="400px" height="170px" alt=""/>
-                          </center>
-                       </div>
-                    </div>
-                
-        </div>
+            </div>
     </body>
 </html>

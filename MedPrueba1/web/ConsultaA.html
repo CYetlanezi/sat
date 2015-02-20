@@ -29,11 +29,11 @@ and open the template in the editor.
             <div class="tittle" style="background-color: #00BCD4">
                 <p style="margin-top: 0px;">Consulta Individual Almacen</p>
             </div>
-            <form id="Info"  action = "http://127.0.0.1:39055/MedPrueba1Server/basealmacen" method = "post">
+            <form id="Info" action = "basealmacen" method = "post">
              <center>
                  <img src="css/imagen/medkit.png" width="35px" height="35px" alt=""/>
                  ID Almacen:
-                 <input type="text" name="idalma" require="true" size="30" style="margin:15px;" maxlength="20" onKeyPress="return Numeros(event)" required/> 
+                 <input type="text" name="idalma" require="true" oncopy="return false" oncut="return false" onpaste="return false" size="30" style="margin:15px;" maxlength="20" onKeyPress="return Numeros(event)" required/> 
                  <br>
                  <input type="submit" name="boton" value="Consulta" /><input type="reset" value="Limpiar" />
                 </center>

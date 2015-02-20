@@ -72,14 +72,14 @@ and open the template in the editor.
                 <p style="margin-top: 0px;">Nueva Consulta</p>
             </div>
             
-                <form id="Info"  action = "http://127.0.0.1:39055/MedPrueba1Server/baseconsultas" method = "post">
+                <form id="Info" action = "baseconsultas" method = "post">
                     <img src="css/imagen/date.png" width="30px" height="30px" alt=""/>
                     Datos Generales
                     <hr>
                     ID Consulta:
-                    <input type="text" name="idconsulta" require="true" label= "ID Consulta" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="idconsulta" require="true" oncopy="return false" oncut="return false" onpaste="return false" label= "ID Consulta" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     Fecha:
-                    <input type="text" name="fecha" require="true"  label= "Fecha" size="30" style="margin:15px;" onkeypress = 'return v(event)' required> 
+                    <input type="text" name="fecha" require="true"  oncopy="return false" oncut="return false" onpaste="return false" label= "Fecha" size="30" style="margin:15px;" onkeypress = 'return v(event)' required> 
                     
                     <br>
                     <br>
@@ -90,18 +90,18 @@ and open the template in the editor.
                     <br>
                     <img src="css/imagen/profile.png" alt=""/>
                     Boleta
-                    <input type="text" name="boleta" require="true" label="Boleta" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="boleta" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Boleta" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <input type="submit" value="Buscar" />
                     <br>
                     <br>
                     Grupo:
-                    <input type="text" name="grupo" size="11" require="true"  label= "Grupo" style="margin:15px;" onkeypress = 'return v(event)' required>  
+                    <input type="text" name="grupo" size="11" require="true" oncopy="return false" oncut="return false" onpaste="return false" label= "Grupo" style="margin:15px;" onkeypress = 'return v(event)' required>  
                     Edad:
-                    <input type="text" name="edad" size="11" require="true"  label= "Edad"  style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required>  
+                    <input type="text" name="edad" size="11" require="true" oncopy="return false" oncut="return false" onpaste="return false" label= "Edad"  style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required>  
                     Peso:
-                    <input type="text" name="peso" size="11" require="true"  label= "Peso"  style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required>    
+                    <input type="text" name="peso" size="11" require="true" oncopy="return false" oncut="return false" onpaste="return false" label= "Peso"  style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required>    
                     Talla:
-                    <input type="text" name="talla" size="11"  require="true"  label= "Talla" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="talla" size="11"  require="true" oncopy="return false" oncut="return false" onpaste="return false" label= "Talla" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     Temperatura:
                     <select id="temperatura" name="temp">
                     <option value="si">Si</option>
@@ -119,23 +119,23 @@ and open the template in the editor.
                      <hr>
                      <br>
                      ID Almacen:
-                    <input type="text" name="idalma" require="true"  label= "IDAlmacen" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="idalma" require="true" oncopy="return false" oncut="return false" onpaste="return false" label= "IDAlmacen" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <input type="submit" value="Buscar" />
                     <br>
                      Nombre:
-                    <input type="text" name="nombrem" require="true"  label= "Nombre" size="30" style="margin:15px;" onkeypress = 'return soloLetras(event); return v(event)' required> 
+                    <input type="text" name="nombrem" require="true" oncopy="return false" oncut="return false" onpaste="return false" label= "Nombre" size="30" style="margin:15px;" onkeypress = 'return soloLetras(event); return v(event)' required> 
                     Fórmula Activa:
-                    <input type="text" name="factiva" size="30" style="margin:15px;" onkeypress = 'return soloLetras(event); return v(event)' required> 
+                    <input type="text" name="factiva" size="30" style="margin:15px;" oncopy="return false" oncut="return false" onpaste="return false" onkeypress = 'return soloLetras(event); return v(event)' required> 
                     <br>
                     Duración:
-                    <input type="text" name="dur" size="4" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="dur" size="4" style="margin:15px;" oncopy="return false" oncut="return false" onpaste="return false" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <select id="tipod" name="tiem">
                     <option value="dia">Día(s)</option>
                     <option value="mes">Mes(es)</option>
                     <option value="anio">Año(s)</option>
                     </select>
                     Frecuencia:
-                    <input type="text" name="frec" size="4" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="frec" size="4" style="margin:15px;" oncopy="return false" oncut="return false" onpaste="return false" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <select id="tipof" name="tiemf">
                     <option value="dia">Hora(s)</option>
                     <option value="dia">Día(s)</option>
@@ -148,7 +148,7 @@ and open the template in the editor.
                     <option value="recomendado">Recomendado</option>
                     </select>
                     Cantidad:
-                    <input type="text" name="cant"size="4" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="cant"size="4" style="margin:15px;" oncopy="return false" oncut="return false" onpaste="return false" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <select id="tipoc" name="dosis">
                     <option value="dia">Caja(s)</option>
                     <option value="dia">Dosís</option>
@@ -164,7 +164,7 @@ and open the template in the editor.
                     <br>
                     <img src="css/imagen/profile.png" alt=""/>
                     Número de Trabajador Dentista:
-                    <input type="text" name="ntrabajador" require="true" label="Numero de Trabajador" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="ntrabajador" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Numero de Trabajador" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <center>
                     <input type="submit" name="boton" value="Alta" /><input type="reset" value="Limpiar" />
                     </center>

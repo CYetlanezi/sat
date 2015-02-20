@@ -43,67 +43,67 @@ and open the template in the editor.
 				</nav>
 				<div class="content">
 					<section id="section-1">
-						<form id="Info" action = "http://127.0.0.1:39055/MedPrueba1Server/basealmacen"method = "post">
+						<form id="Info" action = "basealmacen" method = "post">
                                                     <img src="css/imagen/medkit.png" width="35px" height="35px" alt=""/>
                                                         ID Almacen
-                                                        <input type="text" name="idalma"  size="29" style="margin: 15px;" maxlength="20" onKeyPress="return Numeros(event)" required/>
+                                                        <input type="text" name="idalma"  size="29" oncopy="return false" oncut="return false" onpaste="return false" style="margin: 15px;" maxlength="20" onKeyPress="return Numeros(event)" required/>
                                                          
                                                         Nombre:
-                                                        <input type="text" name="nombrem" require="true" label="Nombre de Medicamento" size="30" style="margin:15px;" maxlength="20" onKeyPress="return Letras(event)" required/>
+                                                        <input type="text" name="nombrem" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Nombre de Medicamento" size="30" style="margin:15px;" maxlength="20" onKeyPress="return Letras(event)" required/>
                                                         <hr>
                                                         <br>
                                                         Fórmula Activa:
                                                         <input type="text" name="factiva" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Fórmula Activa" size="29" style="margin:15px; margin-right: 35px;" maxlength="40" onKeyPress="return Letras(event)" required/>
                                                         Laboratorio:
-                                                        <input type="text" name="lab" size="29" require="true" label="Laboratorio" style="margin: 15px;" maxlength="20" onKeyPress="return Letras(event)" required/>
+                                                        <input type="text" name="lab" size="29" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Laboratorio" style="margin: 15px;" maxlength="20" onKeyPress="return Letras(event)" required/>
                                                         <br>
                                                         <br>
                                                         Tipo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <input type="text" name="tipo" size="29" require="true" label="Tipo"  style="margin: 15px;" maxlength="20" onKeyPress="return Letras(event)" required/>
+                                                        <input type="text" name="tipo" oncopy="return false" oncut="return false" onpaste="return false" size="29" require="true" label="Tipo"  style="margin: 15px;" maxlength="20" onKeyPress="return Letras(event)" required/>
                                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Porción:&nbsp;&nbsp;
-                                                        <input type="text" name="porcion" size="29" require="true" label="Porcion" style="margin: 15px;" maxlength="10" required/>
+                                                        <input type="text" name="porcion" size="29" oncopy="return false" oncut="return false" onpaste="return false" require="true" label="Porcion" style="margin: 15px;" maxlength="10" required/>
                                                         <br>
                                                         <br>
                                                         Vía de Administración:
-                                                        <input type="text" name="vadmi" size="29" require="true" label="Vía de Administración" style="margin: 15px; margin-right: 35px;" maxlength="30" onKeyPress="return Letras(event)" required/>
+                                                        <input type="text" name="vadmi" size="29" oncopy="return false" oncut="return false" onpaste="return false" require="true" label="Vía de Administración" style="margin: 15px; margin-right: 35px;" maxlength="30" onKeyPress="return Letras(event)" required/>
                                                         Uso:&nbsp;&nbsp;
-                                                        <input type="text" name="uso" size="29" require="true" label="Uso"  style="margin: 15px;" maxlength="30" onKeyPress="return Letras(event)" required/>
+                                                        <input type="text" name="uso" size="29" oncopy="return false" oncut="return false" onpaste="return false" require="true" label="Uso"  style="margin: 15px;" maxlength="30" onKeyPress="return Letras(event)" required/>
                                                         <br>
                                                         <br>
                                                         Restricción:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                        <input type="text" name="res" size="29" require="true" label="Restricción" style="margin: 15px; margin-right: 35px;"  maxlength="10" onKeyPress="return Letras(event)" required/>
+                                                        <input type="text" name="res" size="29" oncopy="return false" oncut="return false" onpaste="return false" require="true" label="Restricción" style="margin: 15px; margin-right: 35px;"  maxlength="10" onKeyPress="return Letras(event)" required/>
 
                                                         Caducidad:
-                                                        <input type="text" name="cadu" size="29" require="true" label="Caducidad" style="margin: 15px;" maxlength="10" required/>
+                                                        <input type="text" name="cadu" size="29" oncopy="return false" oncut="return false" onpaste="return false" require="true" label="Caducidad" style="margin: 15px;" maxlength="10" required/>
                                                         <br><br>
                                                         Cantidad:
-                                                        <input type="text" name="cant"size="4" style="margin:15px;" require="true" label="Cantidad"  maxlength="4" onKeyPress="return Numeros(event)" required/>
+                                                        <input type="text" name="cant"size="4" oncopy="return false" oncut="return false" onpaste="return false" style="margin:15px;" require="true" label="Cantidad"  maxlength="4" onKeyPress="return Numeros(event)" required/>
                                                         <select name="tipoc">
                                                         <option value="caja">Caja(s)</option>
                                                         <option value="dosis">Dosís</option>
                                                         </select>
                                                         <center>
-                                                        <input type="submit" name="boton" value="Alta Medicamento" /><input type="reset" value="Limpiar" />
+                                                        <input type="submit" name="boton" oncopy="return false" oncut="return false" onpaste="return false" value="Alta Medicamento" /><input type="reset" value="Limpiar" />
                                                         </center>
                                                     </form>
 					</section>
 					<section id="section-2">
-						<form id="Info" class="formlyWrapper-Dark" class="formlyRequired"  action = "http://127.0.0.1:39055/MedPrueba1Server/basealmacen" method = "post">
+						<form id="Info" class="formlyWrapper-Dark" class="formlyRequired" action = "basealmacen" method = "post">
                                                     <img src="css/imagen/medkit.png" width="35px" height="35px" alt=""/>
                                                         ID Almacen
-                                                        <input type="text" name="idalma" size="29" require="true"  style="margin: 15px;" maxlength="20" onKeyPress="return Numeros(event)" required/>
+                                                        <input type="text" name="idalma" size="29" require="true" oncopy="return false" oncut="return false" onpaste="return false" style="margin: 15px;" maxlength="20" onKeyPress="return Numeros(event)" required/>
                                                         
                                                         Nombre:
-                                                        <input type="text" name="nombrem" require="true" label="Nombre de Material" size="30" style="margin:15px;" maxlength="40" onKeyPress="return Letras(event)" required/>
+                                                        <input type="text" name="nombrem" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Nombre de Material" size="30" style="margin:15px;" maxlength="40" onKeyPress="return Letras(event)" required/>
                                                         <hr>
                                                         <br>
                                                         Marca:
-                                                        <input type="text" name="marca" require="true" label="Marca" size="29" style="margin:15px; margin-right: 35px;" maxlength="40" onKeyPress="return Letras(event)" required/> 
+                                                        <input type="text" name="marca" require="true" label="Marca" size="29" oncopy="return false" oncut="return false" onpaste="return false" style="margin:15px; margin-right: 35px;" maxlength="40" onKeyPress="return Letras(event)" required/> 
                                                         Uso:&nbsp;&nbsp;
-                                                        <input type="text" name="uso" size="29" require="true"  style="margin: 15px;" maxlength="30" onKeyPress="return Letras(event)" required/>
+                                                        <input type="text" name="uso" size="29" require="true"  style="margin: 15px;" oncopy="return false" oncut="return false" onpaste="return false" maxlength="30" onKeyPress="return Letras(event)" required/>
                                                         <br><br>
                                                         Cantidad:
-                                                        <input type="text" name="cant"size="4" require="true" style="margin:15px;" maxlength="4" onKeyPress="return Numeros(event)" required/>
+                                                        <input type="text" name="cant"size="4" require="true" oncopy="return false" oncut="return false" onpaste="return false" style="margin:15px;" maxlength="4" onKeyPress="return Numeros(event)" required/>
                                                         <br>
                                                         <br>
                                                         <center>

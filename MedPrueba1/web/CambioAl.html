@@ -79,11 +79,11 @@ and open the template in the editor.
                 <p style="margin-top: 0px;">Cambio al Almacen</p>
             </div>
             
-            <form id="Info"  action = "http://127.0.0.1:39055/MedPrueba1Server/basealmacen" method = "post">
+            <form id="Info" action = "basealmacen" method = "post">
                 <center>
                     <img src="css/imagen/profile.png" alt=""/>
                     ID Almacen
-                    <input type="text" name="idalma" require="true" label="ID Almacen" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="idalma" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="ID Almacen" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <input type="submit" name="boton" value="Buscar" />
                     <br>                    
                 </center>

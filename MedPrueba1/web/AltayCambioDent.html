@@ -73,26 +73,26 @@ and open the template in the editor.
                 <p style="margin-top: 0px;">Registro de Dentistas</p>
             </div>
             
-            <form id="Info"  action = "http://127.0.0.1:39055/MedPrueba1Server/basedentista" method = "post">
+            <form id="Info" action = "basedentista" method = "post">
                     <img src="css/imagen/profile.png" alt=""/>
                     Numero de Trabajador
-                    <input type="text" name="ntrabajador" require="true" label="Numero de Trabajador" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="ntrabajador" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Numero de Trabajador" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     
                     <br>
                     <br>
                     <img src="css/imagen/key2.png" alt=""/>
                     Contraseña:
-                    <input type="password" name="con" require="true" label="Contraseña" style="margin:15px;" size="29" onkeypress = 'return v(event)' required> 
+                    <input type="password" name="con" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Contraseña" style="margin:15px;" size="29" onkeypress = 'return v(event)' required> 
                     Confirmar Contraseña:
-                    <input type="password" name="ccon" match="con" label="Contraseña" size="29" onkeypress = 'return v(event)' required />
+                    <input type="password" name="ccon" match="con" oncopy="return false" oncut="return false" onpaste="return false" label="Contraseña" size="29" onkeypress = 'return v(event)' required />
                     <br>
                     Apellido Paterno:
-                    <input type="text" name="paterno" require="true" label="Apellido Paterno" size="29" style="margin:15px;" onkeypress = 'return soloLetras(event); return v(event) ' required> 
+                    <input type="text" name="paterno" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Apellido Paterno" size="29" style="margin:15px;" onkeypress = 'return soloLetras(event); return v(event) ' required> 
                     Apellido Materno:
-                    <input type="text" name="materno" require="true" label="Apellido Materno" size="29" style="margin: 15px;" onkeypress = 'return soloLetras(event); return v(event)' required> 
+                    <input type="text" name="materno" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Apellido Materno" size="29" style="margin: 15px;" onkeypress = 'return soloLetras(event); return v(event)' required> 
                     <br>
                     Nombre(s):
-                    <input type="text" name="nombre" require="true" label="Nombre"  size="30" style="margin: 15px;"onkeypress = 'return soloLetras(event); return v(event)' required>  
+                    <input type="text" name="nombre" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Nombre"  size="30" style="margin: 15px;"onkeypress = 'return soloLetras(event); return v(event)' required>  
                     <br>
                     <img src="css/imagen/man.png" width="20px" height="20px " alt=""/>
                     <img src="css/imagen/woman.png" width="20px" height="20px" alt=""/>
@@ -104,15 +104,15 @@ and open the template in the editor.
                     <br>
                     <img src="css/imagen/pushpin.png" alt=""/>
                     Número de Seguridad Social:
-                    <input type="text" require="true" label="Número de Seguridad Social" name="nsocial" size="27" style="margin: 15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" require="true" label="Número de Seguridad Social" oncopy="return false" oncut="return false" onpaste="return false" name="nsocial" size="27" style="margin: 15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <br>
                     <img src="css/imagen/user4.png" alt=""/>
                     Antigüedad(meses):
-                    <input type="text" name="anti"  require="true" label="Antigüedad" size="30" style="margin: 15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="anti"  require="true" label="Antigüedad" oncopy="return false" oncut="return false" onpaste="return false"  size="30" style="margin: 15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <br>
                     <img src="css/imagen/eye.png" alt=""/>
                     Cédula Profesional:
-                    <input type="text" name="cedula" require="true" label="Cédula" size="27" style="margin: 15px;"  onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="cedula" require="true" label="Cédula" oncopy="return false" oncut="return false" onpaste="return false" size="27" style="margin: 15px;"  onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <br>
                     &nbsp;&nbsp;&nbsp;Horario:
                     <br>

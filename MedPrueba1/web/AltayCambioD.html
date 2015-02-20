@@ -72,25 +72,25 @@ and open the template in the editor.
                 <p style="margin-top: 0px;">Registro de Alumnos</p>
             </div>
             
-                <form id="Info" action = "http://127.0.0.1:39055/MedPrueba1Server/basealumnos" method = "post">
+                <form id="Info" action = "basealumnos" method = "post">
                     <img src="css/imagen/profile.png" alt=""/>
                     Boleta:
-                    <input type="text" name="boleta" require="true" label="Boleta" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="boleta" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Boleta" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <br>
                     <br>
                     <img src="css/imagen/key2.png" alt=""/>
                     Contraseña:
-                    <input type="password" name="con" require="true" label="Contraseña" style="margin:15px;" size="29" onkeypress = 'return v(event)' required> 
+                    <input type="password" name="con" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Contraseña" style="margin:15px;" size="29" onkeypress = 'return v(event)' required> 
                     Confirmar Contraseña:
-                    <input type="password" name="ccon" match="con" label="Contraseña" size="29" onkeypress = 'return v(event)' required> 
+                    <input type="password" name="ccon" match="con" oncopy="return false" oncut="return false" onpaste="return false"  label="Contraseña" size="29" onkeypress = 'return v(event)' required> 
                     <br>
                     Apellido Paterno:
-                    <input type="text" name="paterno" require="true" label="Apellido Paterno" size="29" style="margin:15px;"  onkeypress = 'return soloLetras(event); return v(event) ' required> 
+                    <input type="text" name="paterno" require="true"  oncopy="return false" oncut="return false" onpaste="return false" label="Apellido Paterno" size="29" style="margin:15px;"  onkeypress = 'return soloLetras(event); return v(event) ' required> 
                     Apellido Materno:
-                    <input type="text" name="materno" require="true" label="Apellido Materno" size="29" style="margin: 15px;"  onkeypress = 'return soloLetras(event); return v(event) ' required> 
+                    <input type="text" name="materno" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Apellido Materno" size="29" style="margin: 15px;"  onkeypress = 'return soloLetras(event); return v(event) ' required> 
                     <br>
                     Nombre(s):
-                    <input type="text" name="nombre" require="true" label="Nombre"  size="30" style="margin: 15px;" onkeypress = 'return soloLetras(event); return v(event) ' required> 
+                    <input type="text" name="nombre" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Nombre"  size="30" style="margin: 15px;" onkeypress = 'return soloLetras(event); return v(event) ' required> 
                     <br> 
                     <img src="css/imagen/man.png" width="20px" height="20px " alt=""/>
                     <img src="css/imagen/woman.png" width="20px" height="20px" alt=""/>
@@ -106,21 +106,21 @@ and open the template in the editor.
                     <br>
                     <img src="css/imagen/pushpin.png" alt=""/>
                     Número de Seguridad Social del Alumno:
-                    <input type="text" name="nsocial" require="true" label="Seguridad Social Alumnos" size="27" style="margin: 15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="nsocial" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Seguridad Social Alumnos" size="27" style="margin: 15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <br>
                     <br>
                     <img src="css/imagen/user4.png" alt=""/>
                     Nombre del Padre o Tutor:
-                    <input type="text" name="tutor" require="true" label="Nombre Tutor" size="30" style="margin: 15px;"  onkeypress = 'return soloLetras(event); return v(event) ' required> 
+                    <input type="text" name="tutor" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Nombre Tutor" size="30" style="margin: 15px;"  onkeypress = 'return soloLetras(event); return v(event) ' required> 
                     <br>
                     <img src="css/imagen/pushpin.png" alt=""/>
                     Número de Seguridad Social del Tutor:
-                    <input type="text" name="nstutor" require="true" label="Seguridad Social Tutor" size="27" style="margin: 15px;"onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <input type="text" name="nstutor" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Seguridad Social Tutor" size="27" style="margin: 15px;"onkeypress = 'return soloEnteros(event); return v(event)' required> 
                     <br>
                     <br>
                     <img src="css/imagen/mail2.png" alt=""/>
                     Correo
-                    <input type="text" require="true" label="Correo" name="correo" size="30" />
+                    <input type="text" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Correo" name="correo" size="30" />
                     <br>
                     <center>
                     <input type="submit" name="boton" value="Alta" /><input type="reset" value="Limpiar" />

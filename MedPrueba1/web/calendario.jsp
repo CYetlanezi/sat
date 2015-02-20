@@ -65,7 +65,7 @@
           %>
           </select>
           Año (aaaa): 
-            <input type="text" size="5" name="anio"
+            <input type="text" size="5" oncopy="return false" oncut="return false" onpaste="return false" name="anio"
               value="<%= yy %>">
           <input type=submit value="Ver">
         

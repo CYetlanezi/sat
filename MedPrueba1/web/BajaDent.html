@@ -71,11 +71,11 @@ and open the template in the editor.
             <div class="tittle" style="background-color: #B14E6A">
                 <p style="margin-top: 0px;">Baja de Dentistas</p>
             </div>
-            <form id="Info"  action = "http://127.0.0.1:39055/MedPrueba1Server/basedentista" method = "post">
+            <form id="Info" action = "basedentista" method = "post">
                 <center>
             <img src="css/imagen/profile.png" alt=""/>
                     Número de Trabajador:
-                    <input type="text" name="ntrabajador" require="true" label="Numero de Trabajador" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required>
+                    <input type="text" name="ntrabajador" require="true" oncopy="return false" oncut="return false" onpaste="return false" label="Numero de Trabajador" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required>
                     <br>
                     <br>                    
                     <input type="submit" value="Baja" name="boton"><input type="reset" value="Limpiar" />
