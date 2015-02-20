@@ -30,7 +30,7 @@ public class basealmacen extends HttpServlet {
         private final String pass = "n0m3l0";
         private final String url = "jdbc:mysql://localhost/";
         private final String driver = "com.mysql.jdbc.Driver";
-       //  private final String puerto = "8080";
+       //  private final String puerto = "39055";
      private final String puerto = "39055";
     //private final String ip = "";
         private final String ip = "localhost";
@@ -113,11 +113,27 @@ public class basealmacen extends HttpServlet {
                                         
                                         if (r.next())
                                             {
-                                                out.println("<script>");
+                                               /* out.println("<script>");
                                                 out.println("alert(\"Medicamento ya Registrado\");");
                                                 out.println("</script>");
                                                out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
-                                            }
+                                                  */
+                                                   out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                        out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error animateErrorIcon' style='display: block;'><span class='x-mark animateXMark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success' style='display: none;'> <span class='line tip'></span> <span class='line long'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/MedPrueba1/css/imagen/thumbs-up.jpg);'></div> <h2>Medicamento ya registrado</h2><p style='display: block;'>Verifica los datos!</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                         out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        
+                                                }
                                         else
                                             {
                                                 try 
@@ -138,11 +154,29 @@ public class basealmacen extends HttpServlet {
                                                         ps2.setString(11,cant);
                                                          ps2.setString(12,tipoc);
                                                         ps2.executeUpdate();
-                                                        out.println("<script>");
+                                                        
+                                                     /*   out.println("<script>");
                                                         out.println("alert(\"¡Datos Registrados Exitosamente!\");");
                                                         out.println("</script>");
                                                        out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
-                                                    }  
+                                                      */
+                                                             
+                                                   out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                       out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error' style='display: none;'><span class='x-mark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success animate' style='display: block;'> <span class='line tip animateSuccessTip'></span> <span class='line long animateSuccessLong'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/JSSweet/thumbs-up.jpg);'></div> <h2>Medicamento registrado!</h2><p style='display: block;'>Has registrado un nuevo medicamento con &eacute;xito</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                        out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                    
+                                                        }  
                                                 catch (SQLException ex) 
                                                     {
                                                         Logger.getLogger(basealmacen.class.getName()).log(Level.SEVERE, null, ex);
@@ -171,11 +205,27 @@ public class basealmacen extends HttpServlet {
                                         
                                         if (r.next())
                                             {
-                                                out.println("<script>");
+                                               /*out.println("<script>");
                                                 out.println("alert(\"Material ya Registrado\");");
                                                 out.println("</script>");
                                                out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
-                                            }
+                                            */
+                                                   out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                        out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error animateErrorIcon' style='display: block;'><span class='x-mark animateXMark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success' style='display: none;'> <span class='line tip'></span> <span class='line long'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/MedPrueba1/css/imagen/thumbs-up.jpg);'></div> <h2>Material ya registrado</h2><p style='display: block;'>Verifica los datos!</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                         out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                      
+                                                }
                                         else
                                             {
                                                 try 
@@ -189,11 +239,28 @@ public class basealmacen extends HttpServlet {
                                                         ps2.setString(4,uso);
                                                         ps2.setString(5,cant);
                                                         ps2.executeUpdate();
-                                                        out.println("<script>");
+                                                    /*    out.println("<script>");
                                                         out.println("alert(\"¡Datos Registrados Exitosamente!\");");
                                                         out.println("</script>");
                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
-                                                    }  
+                                                       */
+                                                             
+                                                   out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                       out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error' style='display: none;'><span class='x-mark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success animate' style='display: block;'> <span class='line tip animateSuccessTip'></span> <span class='line long animateSuccessLong'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/JSSweet/thumbs-up.jpg);'></div> <h2>Material registrado!</h2><p style='display: block;'>Has registrado un nuevo material con &eacute;xito</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                        out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                    
+                                                        }  
                                                 catch (SQLException ex) 
                                                     {
                                                         Logger.getLogger(basealmacen.class.getName()).log(Level.SEVERE, null, ex);
@@ -249,47 +316,47 @@ public class basealmacen extends HttpServlet {
                                                                         out.println("<tbody>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Id Almacen</th>");
-                                                                        out.println("<td><input type = 'text' name = 'idalma' oncopy='return false' oncut='return false' onpaste='return false' value = '"+idalma+"' maxlength = '20' onkeypress = 'return soloEnteros(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'idalma' value = '"+idalma+"' maxlength = '20' onkeypress = 'return soloEnteros(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Nombre del Medicamento</th>");
-                                                                        out.println("<td><input type = 'text' name = 'nombrem' oncopy='return false' oncut='return false' onpaste='return false' value = '"+nombrem+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'nombrem' value = '"+nombrem+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Fórmula Activa</th>");
-                                                                        out.println("<td><input type='text' name= 'factiva'  oncopy='return false' oncut='return false' onpaste='return false' value = '"+factiva+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type='text' name= 'factiva' value = '"+factiva+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Laboratorio</th>");
-                                                                        out.println("<td><input type = 'text' name = 'lab' oncopy='return false' oncut='return false' onpaste='return false' value = '"+lab+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'lab' value = '"+lab+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Tipo</th>");
-                                                                        out.println("<td><input type = 'text' name = 'tipo' oncopy='return false' oncut='return false' onpaste='return false' value = '"+tipo+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'tipo' value = '"+tipo+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Porción</th>");
-                                                                        out.println("<td><input type = 'text' name = 'porcion' oncopy='return false' oncut='return false' onpaste='return false' value = '"+porcion+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'porcion' value = '"+porcion+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Vía de Administración</th>");
-                                                                        out.println("<td><input type = 'text' name = 'vadmi' oncopy='return false' oncut='return false' onpaste='return false' value = '"+vadmi+"' maxlength = '200' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'vadmi' value = '"+vadmi+"' maxlength = '200' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Uso</th>");
-                                                                        out.println("<td><input type = 'text' name = 'uso' oncopy='return false' oncut='return false' onpaste='return false' value = '"+uso+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'uso' value = '"+uso+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Restricción</th>");
-                                                                        out.println("<td><input type = 'text' name = 'res' oncopy='return false' oncut='return false' onpaste='return false' value = '"+res+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'res' value = '"+res+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Caducidad</th>");
-                                                                        out.println("<td><input type = 'text' name = 'cadu' oncopy='return false' oncut='return false' onpaste='return false' value = '"+cadu+"' maxlength = '20' onkeypress = 'return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'cadu' value = '"+cadu+"' maxlength = '20' onkeypress = 'return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Cantidad</th>");
-                                                                        out.println("<td><input type = 'text' name = 'cant' oncopy='return false' oncut='return false' onpaste='return false' value = '"+cant+"' maxlength = '20' onkeypress = 'return soloEnteros(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'cant' value = '"+cant+"' maxlength = '20' onkeypress = 'return soloEnteros(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Tipo Canntidad</th>");
@@ -321,7 +388,7 @@ public class basealmacen extends HttpServlet {
                                                                         out.println("</div>");
                                                                         out.println("<div class=\"regresar\">");
                                                                         out.println("<button name=\"regresar\" class=\"button button-rounded button-flat-primary alumno colormedical ladda-button ladda-spinner gris\">");
-                                                                        out.println("<a href=\"dentista.html\" style=\"color: white; text-decoration: none\">");
+                                                                        out.println("<a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color: white; text-decoration: none\">");
                                                                         out.println("Regresar");
                                                                         out.println("</a>");
                                                                         out.println("</button>");
@@ -363,23 +430,23 @@ public class basealmacen extends HttpServlet {
                                                                         out.println("<tbody>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Id Almacen</th>");
-                                                                        out.println("<td><input type = 'text' oncopy='return false' oncut='return false' onpaste='return false' name = 'idalma' value = '"+idalma+"' maxlength = '20' onkeypress = 'return soloEnteros(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'idalma' value = '"+idalma+"' maxlength = '20' onkeypress = 'return soloEnteros(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Nombre del Material</th>");
-                                                                        out.println("<td><input type = 'text' oncopy='return false' oncut='return false' onpaste='return false'  name = 'nombrem' value = '"+nombrem+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'nombrem' value = '"+nombrem+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Marca</th>");
-                                                                        out.println("<td><input type='text' name= 'marca' oncopy='return false' oncut='return false' onpaste='return false' value = '"+marca+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type='text' name= 'marca' value = '"+marca+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Uso</th>");
-                                                                        out.println("<td><input type = 'text' name = 'uso' oncopy='return false' oncut='return false' onpaste='return false' value = '"+uso+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'uso' value = '"+uso+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Cantidad</th>");
-                                                                        out.println("<td><input type = 'text' name = 'cant'  oncopy='return false' oncut='return false' onpaste='return false' value = '"+cant+"' maxlength = '20' onkeypress = 'return soloEnteros(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'cant' value = '"+cant+"' maxlength = '20' onkeypress = 'return soloEnteros(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("</tbody>");
                                                                         out.println("</table>");
@@ -391,7 +458,7 @@ public class basealmacen extends HttpServlet {
                                                                         out.println("</div>");
                                                                         out.println("<div class=\"regresar\">");
                                                                         out.println("<button name=\"regresar\" class=\"button button-rounded button-flat-primary alumno colormedical ladda-button ladda-spinner gris\">");
-                                                                        out.println("<a href=\"dentista.html\" style=\"color: white; text-decoration: none\">");
+                                                                        out.println("<a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color: white; text-decoration: none\">");
                                                                         out.println("Regresar");
                                                                         out.println("</a>");
                                                                         out.println("</button>");
@@ -404,11 +471,27 @@ public class basealmacen extends HttpServlet {
                                                             }
                                                             else
                                                                     {
-                                                                        out.println("<script>");
+                                                                       /* out.println("<script>");
                                                                         out.println("alert(\"¡No Registrado en Almacen!\");");
                                                                         out.println("</script>"); 
                                                                          out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
-                                                                    }
+                                                                    */
+                                                                                                 out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                        out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error animateErrorIcon' style='display: block;'><span class='x-mark animateXMark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success' style='display: none;'> <span class='line tip'></span> <span class='line long'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/MedPrueba1/css/imagen/thumbs-up.jpg);'></div> <h2>No registrado en Almacen!</h2><p style='display: block;'>Tienes que registrarlo previamente</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                         out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                      
+                                                                               }
                                                             
                                                             }
                                                     }
@@ -442,11 +525,28 @@ public class basealmacen extends HttpServlet {
                                                                 String query2 = "delete from medicamento where idalma = '"+idalma+"'";
                                                                 ps2 = c.prepareStatement(query2);
                                                                 ps2.executeUpdate();
-                                                                out.println("<script>");
+                                                               /* out.println("<script>");
                                                                 out.println("alert(\"¡Datos dados de baja Exitosamente!\");");
                                                                 out.println("</script>");
                                                                 out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
-                                                            }  
+   */
+                                                             
+                                                   out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                       out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error' style='display: none;'><span class='x-mark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success animate' style='display: block;'> <span class='line tip animateSuccessTip'></span> <span class='line long animateSuccessLong'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/JSSweet/thumbs-up.jpg);'></div> <h2>Dato dado de baja!</h2><p style='display: block;'>Has eliminado a un elemento del almacen</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                        out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                    
+                                                                       }  
                                                         catch (SQLException ex) 
                                                             {
                                                                 Logger.getLogger(basealmacen.class.getName()).log(Level.SEVERE, null, ex);
@@ -473,22 +573,54 @@ public class basealmacen extends HttpServlet {
                                                                         String query3 = "delete from material where idalma = '"+idalma+"'";
                                                                         ps3 = c.prepareStatement(query3);
                                                                         ps3.executeUpdate();
-                                                                        out.println("<script>");
-                                                                        out.println("alert(\"¡Datos dados de baja Exitosamente!\");");
-                                                                        out.println("</script>");
-                                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
-                                                                    }  
+                                                                         /* out.println("<script>");
+                                                                out.println("alert(\"¡Datos dados de baja Exitosamente!\");");
+                                                                out.println("</script>");
+                                                                out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
+   */
+                                                             
+                                                   out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                       out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error' style='display: none;'><span class='x-mark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success animate' style='display: block;'> <span class='line tip animateSuccessTip'></span> <span class='line long animateSuccessLong'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/JSSweet/thumbs-up.jpg);'></div> <h2>Dato dado de baja!</h2><p style='display: block;'>Has eliminado a un elemento del almacen</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                        out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                    }  
                                                                 catch (SQLException ex) 
                                                                     {
                                                                         Logger.getLogger(basealmacen.class.getName()).log(Level.SEVERE, null, ex);
                                                                     }
                                                             } 
                                                         else{
-                                                                out.println("<script>");
+                                                              /*  out.println("<script>");
                                                                 out.println("alert(\"No registrado en Almacen\");");
                                                                 out.println("</script>");
                                                                out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
+                                                            */
                                                             
+                                                                        out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                        out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error animateErrorIcon' style='display: block;'><span class='x-mark animateXMark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success' style='display: none;'> <span class='line tip'></span> <span class='line long'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/MedPrueba1/css/imagen/thumbs-up.jpg);'></div> <h2>No registrado en Almacen!</h2><p style='display: block;'>Tienes que registrarlo previamente</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                         out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        
                                                         }
                                                     }
                                             }
@@ -585,7 +717,7 @@ public class basealmacen extends HttpServlet {
                                                                                 out.println("</div>");
                                                                                 out.println("<div class=\"regresar\">");
                                                                                 out.println("<button name=\"regresar\" class=\"button button-rounded button-flat-primary alumno colormedical ladda-button ladda-spinner gris\">");
-                                                                                out.println("<a href=\"dentista.html\" style=\"color: white; text-decoration: none\">");
+                                                                                out.println("<a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color: white; text-decoration: none\">");
                                                                                 out.println("Regresar");
                                                                                 out.println("</a>");
                                                                                 out.println("</button>");
@@ -651,7 +783,7 @@ public class basealmacen extends HttpServlet {
                                                                                 out.println("</div>");
                                                                                 out.println("<div class=\"regresar\">");
                                                                                 out.println("<button name=\"regresar\" class=\"button button-rounded button-flat-primary alumno colormedical ladda-button ladda-spinner gris\">");
-                                                                                out.println("<a href=\"dentista.html\" style=\"color: white; text-decoration: none\">");
+                                                                                out.println("<a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color: white; text-decoration: none\">");
                                                                                 out.println("Regresar");
                                                                                 out.println("</a>");
                                                                                 out.println("</button>");
@@ -664,11 +796,27 @@ public class basealmacen extends HttpServlet {
                                                                             }
                                                                     }
                                                                     else{
-                                                                        out.println("<script>");
+                                                                     /*   out.println("<script>");
                                                                         out.println("alert(\"No registrado\");");
                                                                         out.println("</script>");
                                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
-                                                                                 
+                                                                         */
+                                                                             
+                                                                        out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                        out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error animateErrorIcon' style='display: block;'><span class='x-mark animateXMark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success' style='display: none;'> <span class='line tip'></span> <span class='line long'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/MedPrueba1/css/imagen/thumbs-up.jpg);'></div> <h2>No registrado en almacen!</h2><p style='display: block;'>Tienes que registrarlo previamente </p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                         out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        
                                                                         }
                                                                     }
                                                             }
@@ -709,11 +857,27 @@ public class basealmacen extends HttpServlet {
                                                 ps1.setString(11,tipoc);
                                                 ps1.setString(12,idalma);
                                                 ps1.executeUpdate();
-                                                out.println("<script>");
+                                             /*   out.println("<script>");
                                                 out.println("alert(\"Datos Modificados Exitosamente\");");
                                                 out.println("</script>");
                                                 out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://localhost:39055/MedPrueba1/dentista.html'/>");
-                                               }
+                                             */
+                                                                  out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                       out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error' style='display: none;'><span class='x-mark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success animate' style='display: block;'> <span class='line tip animateSuccessTip'></span> <span class='line long animateSuccessLong'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/JSSweet/thumbs-up.jpg);'></div> <h2>Datos modificados exitosamente!</h2><p style='display: block;'>Has modificado a un registro</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                        out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                             
+                                             }
                                         catch (SQLException ex) 
                                              {
                                                 Logger.getLogger(basealmacen.class.getName()).log(Level.SEVERE, null, ex);
@@ -737,11 +901,27 @@ public class basealmacen extends HttpServlet {
                                                 ps2.setString(4,cant);
                                                 ps2.setString(5,idalma);
                                                 ps2.executeUpdate();
-                                                out.println("<script>");
+                                                /*out.println("<script>");
                                                 out.println("alert(\"Datos Modificados Exitosamente\");");
                                                 out.println("</script>");
                                                  out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html/>");
-                                               }
+                                               */
+                                                                  out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                       out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error' style='display: none;'><span class='x-mark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success animate' style='display: block;'> <span class='line tip animateSuccessTip'></span> <span class='line long animateSuccessLong'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/JSSweet/thumbs-up.jpg);'></div> <h2>Datos modificados exitosamente!</h2><p style='display: block;'>Has modificado a un registro</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a  href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                        out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                             
+                                                        }
                                         catch (SQLException ex) 
                                              {
                                                 Logger.getLogger(basealmacen.class.getName()).log(Level.SEVERE, null, ex);
@@ -823,7 +1003,7 @@ public class basealmacen extends HttpServlet {
                                        out.println("</div>");
                                        out.println("<div class=\"regresar\">");
                                        out.println("<button name=\"regresar\" class=\"button button-rounded button-flat-primary alumno colormedical ladda-button ladda-spinner gris\">");
-                                       out.println("<a href=\"dentista.html\" style=\"color: white; text-decoration: none\">");
+                                       out.println("<a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color: white; text-decoration: none\">");
                                        out.println("Regresar");
                                        out.println("</a>");
                                        out.println("</button>");
@@ -903,7 +1083,7 @@ public class basealmacen extends HttpServlet {
                                        out.println("</div>");
                                        out.println("<div class=\"regresar\">");
                                        out.println("<button name=\"regresar\" class=\"button button-rounded button-flat-primary alumno colormedical ladda-button ladda-spinner gris\">");
-                                       out.println("<a href=\"dentista.html\" style=\"color: white; text-decoration: none\">");
+                                       out.println("<a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color: white; text-decoration: none\">");
                                        out.println("Regresar");
                                        out.println("</a>");
                                        out.println("</button>");

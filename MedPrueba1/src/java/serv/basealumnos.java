@@ -107,11 +107,27 @@ public class basealumnos extends HttpServlet {
                                         
                                         if (r.next())
                                             {
-                                                out.println("<script>");
+                                               /* out.println("<script>");
                                                 out.println("alert(\"Alumno ya Registrado\");");
                                                 out.println("</script>");
                                                  out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");
-                                            }
+                                                       */
+                                                   out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                        out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error animateErrorIcon' style='display: block;'><span class='x-mark animateXMark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success' style='display: none;'> <span class='line tip'></span> <span class='line long'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/MedPrueba1/css/imagen/thumbs-up.jpg);'></div> <h2>Alumno ya registrado</h2><p style='display: block;'>Verifica los datos!</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                         out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        
+                                              }
                                         else
                                             {
                                                 try 
@@ -131,11 +147,30 @@ public class basealumnos extends HttpServlet {
                                                         ps2.setString(10,nstutor);
                                                         ps2.setString(11,correo);
                                                         ps2.executeUpdate();
-                                                        out.println("<script>");
+                                                        
+                                                        /*out.println("<script>");
                                                         out.println("alert(\"¡Datos Registrados Exitosamente!\");");
                                                         out.println("</script>");
                                                          out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");
-                                                    }  
+                                                   */
+                                                             
+                                                   out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                       out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error' style='display: none;'><span class='x-mark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success animate' style='display: block;'> <span class='line tip animateSuccessTip'></span> <span class='line long animateSuccessLong'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/JSSweet/thumbs-up.jpg);'></div> <h2>Alumno registrado!</h2><p style='display: block;'>Has registrado un nuevo alumno con &eacute;xito</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                        out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        
+                                                        
+                                                       }  
                                                 catch (SQLException ex) 
                                                     {
                                                         Logger.getLogger(basealumnos.class.getName()).log(Level.SEVERE, null, ex);
@@ -190,40 +225,40 @@ public class basealumnos extends HttpServlet {
                                                                         out.println("<tbody>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Boleta</th>");
-                                                                        out.println("<td><input type = 'text' name = 'boleta' oncopy='return false' oncut='return false' onpaste='return false' value = '"+boleta+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'boleta' value = '"+boleta+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Contraseña</th>");
-                                                                        out.println("<td><input type = 'text' name = 'con' oncopy='return false' oncut='return false' onpaste='return false' value = '"+con+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'con' value = '"+con+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Confirmar Contraseña</th>");
-                                                                        out.println("<td><input type='password' name= 'ccon ' oncopy='return false' oncut='return false' onpaste='return false' match= 'con' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type='password' name= 'ccon ' match= 'con' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Paterno</th>");
-                                                                        out.println("<td><input type = 'text' name = 'paterno' oncopy='return false' oncut='return false' onpaste='return false' value = '"+paterno+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'paterno' value = '"+paterno+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Materno</th>");
-                                                                        out.println("<td><input type = 'text' name = 'materno' oncopy='return false' oncut='return false' onpaste='return false' value = '"+materno+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'materno' value = '"+materno+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Nombre</th>");
-                                                                        out.println("<td><input type = 'text' name = 'nombre' oncopy='return false' oncut='return false' onpaste='return false' value = '"+nombre+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'nombre' value = '"+nombre+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Género</th>");
                                                                         out.println("<td>");
                                                                         out.println("<select name = 'genero'>");
-                                                                        if (genero.equals("femenino"))
+                                                                        if (genero.equals("femenino") || genero.equals("Femenino"))
                                                                             {
                                                                                 out.println("<option value = 'femenino' selected>Femenino</option>");
                                                                                 out.println("<option value = 'masculino'>Masculino</option>");
                                                                             }
                                                                         else
                                                                             {
-                                                                                if (genero.equals("masculino"))
+                                                                                if (genero.equals("masculino") || genero.equals("Masculino"))
                                                                                     {
                                                                                         out.println("<option value = 'femenino'>Femenino</option>");
                                                                                         out.println("<option value = 'masculino' selected>Masculino</option>");
@@ -234,23 +269,23 @@ public class basealumnos extends HttpServlet {
                                                                         out.println("</tr>");
                                                                          out.println("<tr>");
                                                                         out.println("<th>Alérgias</th>");
-                                                                        out.println("<td><input type = 'text' name = 'aler' oncopy='return false' oncut='return false' onpaste='return false' value = '"+aler+"' maxlength = '200' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'aler' value = '"+aler+"' maxlength = '200' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Número de Seguro Social</th>");
-                                                                        out.println("<td><input type = 'text' name = 'nsocial' oncopy='return false' oncut='return false' onpaste='return false' value = '"+nsocial+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'nsocial' value = '"+nsocial+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Tutor</th>");
-                                                                        out.println("<td><input type = 'text' name = 'tutor' oncopy='return false' oncut='return false' onpaste='return false' value = '"+tutor+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'tutor' value = '"+tutor+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Número de Seguridad Social del Tutor</th>");
-                                                                        out.println("<td><input type = 'text' name = 'nstutor' oncopy='return false' oncut='return false' onpaste='return false' value = '"+nstutor+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'nstutor' value = '"+nstutor+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         out.println("<tr>");
                                                                         out.println("<th>Correo</th>");
-                                                                        out.println("<td><input type = 'text' name = 'correo' oncopy='return false' oncut='return false' onpaste='return false' value = '"+correo+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
+                                                                        out.println("<td><input type = 'text' name = 'correo' value = '"+correo+"' maxlength = '20' onkeypress = 'return soloLetras(event); return antiTrolls(event)' required></td>");
                                                                         out.println("</tr>");
                                                                         
                                                                         out.println("</tbody>");
@@ -263,7 +298,7 @@ public class basealumnos extends HttpServlet {
                                                                         out.println("</div>");
                                                                         out.println("<div class=\"regresar\">");
                                                                         out.println("<button name=\"regresar\" class=\"button button-rounded button-flat-primary alumno colormedical ladda-button ladda-spinner gris\">");
-                                                                        out.println("<a href=\"dentista.html\" style=\"color: white; text-decoration: none\">");
+                                                                        out.println("<a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color: white; text-decoration: none\">");
                                                                         out.println("Regresar");
                                                                         out.println("</a>");
                                                                         out.println("</button>");
@@ -276,11 +311,27 @@ public class basealumnos extends HttpServlet {
                                                             }
                                                         else
                                                             {
-                                                                out.println("<script>");
+                                                            /*    out.println("<script>");
                                                                 out.println("alert(\"¡Alumno no existente!\");");
                                                                 out.println("</script>"); 
                                                                 out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://localhost:39055/MedPrueba1/dentista.html'/>");
-                                                            }
+                                                            */
+                                                                  out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                        out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error animateErrorIcon' style='display: block;'><span class='x-mark animateXMark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success' style='display: none;'> <span class='line tip'></span> <span class='line long'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/MedPrueba1/css/imagen/thumbs-up.jpg);'></div> <h2>Alumno no registrado!</h2><p style='display: block;'>Tienes que registrar previamente al alumno</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                         out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        
+                                                              }
                                                     }
                                                 catch (SQLException ex) 
                                                     {
@@ -302,20 +353,53 @@ public class basealumnos extends HttpServlet {
                                                         paterno = r.getString("paterno");
                                                         materno = r.getString("materno");
                                                         nombre = r.getString("nombre");
-                                                        out.println("<html>");
+                                                        
                                                         out.println("<script>");
                                                         out.println("alert(\"¿Seguro que deseas eliminar a "+boleta+" "+paterno+" "+materno+" "+nombre+"?\");");
                                                         out.println("</script>");
                                                         out.println("</html>");
+                                                   /*      out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                       out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='true' data-allow-ouside-click='false' data-has-done-function='true' style='display: block; margin-top: -169px;'><div class='icon error' style='display: none;'><span class='x-mark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning pulseWarning' style='display: block;'> <span class='body pulseWarningIns'></span> <span class='dot pulseWarningIns'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success' style='display: none;'> <span class='line tip'></span> <span class='line long'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none;'></div> <h2>&iquest;Seguro que deseas eliminar a "+boleta+"  "+paterno+"  "+materno+"  "+nombre+"?</h2><p style='display: block;'>Se eliminar&aacute; de forma permanente!</p><button class='cancel' tabindex='2' style='display: inline-block; box-shadow: none;'>Cancelar</button><button class='confirm' tabindex='1' style='box-shadow: rgba(221, 107, 85, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(221, 107, 85);'>Si, eliminalo!</button></div>");
+                                                         out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        */
                                                         try 
                                                             {
                                                                 String query2 = "delete from alumnos where boleta = '"+boleta+"'";
                                                                 ps2 = c.prepareStatement(query2);
                                                                 ps2.executeUpdate();
-                                                                out.println("<script>");
-                                                                out.println("alert(\"¡Datos dados de baja Exitosamente!\");");
-                                                                out.println("</script>");
-                                                                 out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");
+                                                                /*out.println("<script>");
+                                                        out.println("alert(\"¡Datos baja Exitosamente!\");");
+                                                        out.println("</script>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");
+                                                   */
+                                                             
+                                                   out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                       out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error' style='display: none;'><span class='x-mark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success animate' style='display: block;'> <span class='line tip animateSuccessTip'></span> <span class='line long animateSuccessLong'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/JSSweet/thumbs-up.jpg);'></div> <h2>Alumno dado de baja!</h2><p style='display: block;'>Has eliminado a un alumno</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                        out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        
+                                                    
                                                             }  
                                                         catch (SQLException ex) 
                                                             {
@@ -324,11 +408,27 @@ public class basealumnos extends HttpServlet {
                                                     }
                                                 else
                                                     {
-                                                        out.println("<script>");
+                                                      /*  out.println("<script>");
                                                         out.println("alert(\"Número de boleta no registrado\");");
                                                         out.println("</script>");
                                                          out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");
-                                                    }
+                                            */
+                                                                        out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                        out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error animateErrorIcon' style='display: block;'><span class='x-mark animateXMark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success' style='display: none;'> <span class='line tip'></span> <span class='line long'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/MedPrueba1/css/imagen/thumbs-up.jpg);'></div> <h2>Alumno no registrado!</h2><p style='display: block;'>Tienes que registrar previamente al alumno</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                         out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        
+                                                              }
                                             }
                                         catch (SQLException ex) 
                                             {
@@ -414,7 +514,7 @@ public class basealumnos extends HttpServlet {
                                                                                 out.println("</div>");
                                                                                 out.println("<div class=\"regresar\">");
                                                                                 out.println("<button name=\"regresar\" class=\"button button-rounded button-flat-primary alumno colormedical ladda-button ladda-spinner gris\">");
-                                                                                out.println("<a href=\"dentista.html\" style=\"color: white; text-decoration: none\">");
+                                                                                out.println("<a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color: white; text-decoration: none\">");
                                                                                 out.println("Regresar");
                                                                                 out.println("</a>");
                                                                                 out.println("</button>");
@@ -428,11 +528,26 @@ public class basealumnos extends HttpServlet {
                                                                     }
                                                                 else
                                                                     {
-                                                                        out.println("<script>");
-                                                                        out.println("alert(\"Número de boleta no registrado\");");
-                                                                        out.println("</script>");
-                                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");
-                                                                    }
+                                                                            /*  out.println("<script>");
+                                                        out.println("alert(\"Número de boleta no registrado\");");
+                                                        out.println("</script>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");
+                                            */
+                                                                        out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                        out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error animateErrorIcon' style='display: block;'><span class='x-mark animateXMark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success' style='display: none;'> <span class='line tip'></span> <span class='line long'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/MedPrueba1/css/imagen/thumbs-up.jpg);'></div> <h2>Alumno no registrado!</h2><p style='display: block;'>Tienes que registrar previamente al alumno</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                         out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        }
                                                             }
                                                         catch (SQLException ex) 
                                                             {
@@ -469,11 +584,29 @@ public class basealumnos extends HttpServlet {
                                                 ps1.setString(10,correo);
                                                 ps1.setString(11,boleta);
                                                 ps1.executeUpdate();
-                                                out.println("<script>");
-                                                out.println("alert(\"Datos Modificados Exitosamente\");");
-                                                out.println("</script>");
-                                                out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");
-                                               }
+                                                 /*out.println("<script>");
+                                                        out.println("alert(\"¡Datos Modificados Exitosamente!\");");
+                                                        out.println("</script>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");
+                                                   */
+                                                             
+                                                   out.println("<head>");
+                                                       out.println("<meta charset='utf-8'>");
+                                                      out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />");
+                                                         out.println("<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' />");
+                                                         out.println("<title>Alerta</title>");
+                                                         out.println("<script src='js/sweet-alert.js'></script>");
+                                                    out.println("<link rel='stylesheet' href='css/sweet-alert.css'>");
+                                                         out.println("</head>");
+                                                          out.println("<div>");
+                                                         out.println("<div class='sweet-overlay' tabindex='-1' style='opacity: 1.09; display: block;'></div>");
+                                                       out.println("<div class='sweet-alert showSweetAlert visible' tabindex='-1' data-has-cancel-button='false' data-allow-ouside-click='false' data-has-done-function='false' style='display: block; margin-top: -169px;'><div class='icon error' style='display: none;'><span class='x-mark'><span class='line left'></span><span class='line right'></span></span></div><div class='icon warning' style='display: none;'> <span class='body'></span> <span class='dot'></span> </div> <div class='icon info' style='display: none;'></div> <div class='icon success animate' style='display: block;'> <span class='line tip animateSuccessTip'></span> <span class='line long animateSuccessLong'></span> <div class='placeholder'></div> <div class='fix'></div> </div> <div class='icon custom' style='display: none; width: 80px; height: 80px; background-image: url(http://localhost:39055/JSSweet/thumbs-up.jpg);'></div> <h2>Datos modificados!</h2><p style='display: block;'>Has modificado los datos con &eacute;xito</p><button class='cancel' tabindex='2' style='display: none; box-shadow: none;'>Cancel</button><button class='confirm' tabindex='1' style='box-shadow: rgba(174, 222, 244, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(174, 222, 244);'><a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color:white; text-decoration: none;\">OK</a></button></div>");
+                                                        out.println("</div>");
+                                                         out.println("</div>");
+                                                         out.print("<META HTTP-EQUIV='REFRESH'" + "CONTENT='20.0000001;URL=http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'/>");   
+                                                        
+                                                    
+                                             }
                                         catch (SQLException ex) 
                                              {
                                                 Logger.getLogger(basealumnos.class.getName()).log(Level.SEVERE, null, ex);
@@ -542,7 +675,7 @@ public class basealumnos extends HttpServlet {
                                        out.println("</div>");
                                        out.println("<div class=\"regresar\">");
                                        out.println("<button name=\"regresar\" class=\"button button-rounded button-flat-primary alumno colormedical ladda-button ladda-spinner gris\">");
-                                       out.println("<a href=\"dentista.html\" style=\"color: white; text-decoration: none\">");
+                                       out.println("<a href=\"http://"+ip+":"+puerto+"/MedPrueba1/dentista.html\" onclick='window.location='http://"+ip+":"+puerto+"/MedPrueba1/dentista.html'; return false;' style=\"color: white; text-decoration: none\">");
                                        out.println("Regresar");
                                        out.println("</a>");
                                        out.println("</button>");
