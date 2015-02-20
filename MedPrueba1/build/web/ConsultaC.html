@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jQuery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/formly.js"></script>
+        <link rel="stylesheet" href="css/formly.css" type="text/css" />
+        <script>
+            $(document).ready(function() { 
+
+                    $('#Info').formly({'theme':'Dark'}, function(e) { 
+		
+                    $('.callback').html(e);
+                });
+            });
+             function v (a){
+                 var keynum;
+                 if (window.event){ keynum = a.keyCode; }
+                 if (a.which){ keynum = a.which; }
+                 if ((keynum >= 33 && keynum <= 43) || (keynum >= 58 && keynum <= 64)){ return false; }
+                 else { return true; }
+             }
+            function soloEnteros(a){
+                var keynum;
+                if (window.event){
+                    keynum = a.keyCode; 
+                }
+                if (a.which){
+                    keynum = a.which; 
+                }
+                if (((keynum >= 48 && keynum <= 57) || (keynum == 8)) && (keynum != 86)){
+                    return true; 
+                }
+                else {
+                    return false; 
+                }
+            }
+            
+              function soloLetras(a){
+                  var keynum;
+                if (window.event){
+                    keynum = a.keyCode; 
+                }
+                if (a.which){
+                    keynum = a.which; 
+                }
+                if ((keynum >= 97 && keynum <= 122) || (keynum >= 65 && keynum <= 90) || (keynum == 8) || (keynum == 32) || (keynum >= 160 && keynum <= 163)){
+                    return true; 
+                }
+                
+                else {
+                    return false; 
+                }
+            }
+        </script>
+        <link rel="stylesheet" href="formly.css" type="text/css" />
+        </head>
+        <body>
+        
+            <div class="tittle" style="background-color: #496381">
+                <p style="margin-top: 0px;">Historial Alumno</p>
+            </div>
+            <form id="Info"  action = "http://127.0.0.1:39055/MedPrueba1Server/baseconsultas" method = "post">
+           <center>
+            <img src="css/imagen/profile.png" alt=""/>
+                    Boleta:
+                    <input type="text" name="boleta" require="true" label="Boleta" size="30" style="margin:15px;"  onkeypress = 'return soloEnteros(event); return v(event)' required>  
+                    
+                    <br>
+                    <br>                    
+                    <input type="submit" name="boton" value="Buscar"/><input type="reset" value="Limpiar" />
+                    </center>
+            </form>
+        
+        </body>
+</html>

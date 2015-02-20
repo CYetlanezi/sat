@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Inicio Alumno</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/ladda.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src="js/Validaciones.js"></script>
+        <link href="css/login.css" rel="stylesheet" type="text/css" />
+        <link href="css/ladda.css" rel="stylesheet" type="text/css" />
+        
+
+    </head>
+    <body>
+        <div class="regresar">
+            <button name="regresar" class="button button-rounded button-flat-primary alumno colormedical ladda-button ladda-spinner gris">
+                <a href="index.html" style="color: white; text-decoration: none">
+                Regresar
+                </a>
+            </button>
+        </div>
+        <div class="container"><center>
+            <div class="form-signin">
+                <img src="css/imagen/alumno.png" width="110px" height="110px">
+                <div id="form-signin">
+                    <form id="Info"  action = "http://127.0.0.1:39055/MedPrueba1Server/sesion" method="post"> 
+                    <div class="showcase">
+                    <input type="text" class="text" placeholder="Boleta" id="username" name="boleta" maxlength="10" onKeyPress="return Numeros(event)" required>
+                    </div>                       
+                    <div class="showcase">                    
+                    <input type="password" class="text" placeholder="Clave de Acceso" id="password" maxlength="20" name="clave" required>
+                    </div>
+                    <br>                     
+                                                       
+                    <input type="submit" name="press" value="Entrar" class="button button-rounded button-flat-primary alumno colormedical">
+                    <!--img src="css/imagen/entrar.png" width="40" height="20" -->                                                                                             
+                    </form>
+                </div>
+                
+            </div>
+            <!-- /container -->
+            </center>
+        </div>
+        <script>
+            // Bind normal buttons
+            Ladda.bind( '.ladda-button', { timeout: 1000 } );
+        </script>
+
+    </body>
+</html>

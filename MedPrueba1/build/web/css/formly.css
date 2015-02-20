@@ -1,0 +1,228 @@
+/* Base theme */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+@import url(http://fonts.googleapis.com/css?family=ABeeZee);
+.showcase {
+  padding: 20px;
+  }
+  @media all and (max-width: 865px) {
+    .showcase {
+      margin: 5px auto;
+      padding: 46px 20px; } }
+  @media all and (max-width: 440px) {
+    .showcase {
+      width: auto; } }
+  .tittle {
+      width: 100%;
+      height: 150px;
+      background-color: #4EB53F;
+  }
+  p {
+      color: white;
+      font-family: 'Pacifico', cursive;
+      font-size: 50px;
+      text-align: left;
+       padding-top: 40px;
+      padding-left: 80px;
+  }
+  
+  form {
+      font-family: 'Quicksand', sans-serif;
+  }
+  
+.formlyWrapper-Base
+	{
+	color:#888;
+	background:#eee;
+	border:1px solid #fff;
+	padding:10px;
+	box-shadow:0px 0px 3px #888;
+    -moz-box-shadow:0px 0px 3px #888;
+    -webkit-box-shadow:0px 0px 3px #888;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    -khtml-border-radius:4px;
+    text-shadow:0px 1px 0px #fff;
+	}
+.formlyWrapper-Base input[type="text"], .formlyWrapper-Base input[type="password"], .formlyWrapper-Base select, .formlyWrapper-Base textarea
+	{
+	color:#444;
+	border:1px solid #ccc;
+	padding:5px 10px;
+	box-shadow:0px 1px 0px #fff;
+    -moz-box-shadow:0px 1px 0px #fff;
+    -webkit-box-shadow:0px 1px 0px #fff;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    -khtml-border-radius:4px;
+    margin:5px 10px;
+	}
+.formlyWrapper-Base input[type="submit"], .formlyWrapper-Base input[type="reset"], .formlyWrapper-Base input[type="button"]
+	{
+	border:1px solid #bbb;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    -khtml-border-radius:3px;
+    background: -moz-linear-gradient(100% 100% 90deg, #d5d5d5, #eee);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#d5d5d5));
+    background: -webkit-linear-gradient(#eee, #d5d5d5);
+    background: -o-linear-gradient(#eee, #d5d5d5);
+    color:#232d3d;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px 10px;
+    margin:15px 0px 10px 10px;
+    text-shadow:0px 1px 0px #fff;
+    cursor:pointer;
+    box-shadow:0px 1px 2px #ccc;
+    -moz-box-shadow:0px 1px 2px #ccc;
+    -webkit-box-shadow:0px 1px 2px #ccc;
+    float:right;
+    }
+.formlyWrapper-Base input[type="submit"]:hover, .formlyWrapper-Base input[type="submit"]:active
+	{ color:#008ce5; }
+.formlyWrapper-Base input[type="reset"]:hover, .formlyWrapper-Base input[type="reset"]:active, .formlyWrapper-Base input[type="button"]:hover, .formlyWrapper-Base input[type="button"]:active
+	{ color:#d85054; }
+.formlyWrapper-Base input[type="submit"]:active, .formlyWrapper-Base input[type="reset"]:active, .formlyWrapper-Base input[type="button"]:active
+	{
+	box-shadow:inset 0px 1px 2px #ccc;
+    -moz-box-shadow:inset 0px 1px 2px #ccc;
+    -webkit-box-shadow:inset 0px 1px 2px #ccc;
+	}
+.formlyWrapper-Base h1, .formlyWrapper-Base h2
+	{ padding:0; margin:3px 0; }
+.formlyWrapper-Base h1
+	{
+	font-size:16px;
+	color:#555;
+	}
+.formlyWrapper-Base h2
+	{
+	font-size:13px;
+	color:#666;
+	}
+.formlyWrapper-Base hr
+	{
+	color:#ddd;
+	border:1px solid #ddd;
+	border-bottom-color:#f9f9f9;
+	}	
+	
+/* Dark theme */
+.formlyWrapper-Dark
+	{
+	background:#E8EAF6;
+	padding:40px;
+	}
+.formlyWrapper-Dark input[type="text"], .formlyWrapper-Dark input[type="password"], .formlyWrapper-Dark input[type="checkbox"], .formlyWrapper-Dark select, .formlyWrapper-Dark textarea
+	{
+	color:#444;
+	background:#fff;
+	border:2px solid #fff;
+	padding:5px 10px;
+	box-shadow:0px 1px 4px #000;
+    -moz-box-shadow:0px 1px 4px #000;
+    -webkit-box-shadow:0px 1px 4px #000;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    -khtml-border-radius:4px;
+    margin:5px 10px;
+	}
+.formlyWrapper-Dark input[type="submit"], .formlyWrapper-Dark input[type="reset"], .formlyWrapper-Dark input[type="button"]
+	{
+	
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:5px;
+    -khtml-border-radius:3px;
+    background: -moz-linear-gradient(100% 100% 90deg, #222, #333);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#222));
+    background: -webkit-linear-gradient(#00a080, #00a080);
+    background: -o-linear-gradient(#333, #222);
+    color:#ddd;
+    font-size:24px;
+    font-weight:bold;
+    font-family: 'ABeeZee', sans-serif;
+    padding:6px 10px;
+    margin:15px 25px 15px 25px;
+    cursor:pointer;
+    -moz-box-shadow:inset 0px 1px 0px #444;
+    -webkit-box-shadow:inset 0px 1px 0px #444;
+    }
+.formlyWrapper-Dark input[type="submit"]:hover, .formlyWrapper-Dark input[type="submit"]:active
+	{ background-color: gainsboro;
+            color: honeydew; }
+.formlyWrapper-Dark input[type="reset"]:hover, .formlyWrapper-Dark input[type="reset"]:active, .formlyWrapper-Dark input[type="button"]:hover, .formlyWrapper-Dark input[type="button"]:active
+	{  background-color: gainsboro;
+            color: #A00600; }
+.formlyWrapper-Dark input[type="submit"]:active, .formlyWrapper-Dark input[type="reset"]:active, .formlyWrapper-Dark input[type="button"]:active
+	{
+	box-shadow:inset 0px 1px 2px #111;
+    -moz-box-shadow:inset 0px 1px 2px #111;
+    -webkit-box-shadow:inset 0px 1px 2px #111;
+	}
+.formlyWrapper-Dark h1, .formlyWrapper-Dark h2
+	{ padding:0; margin:3px 0; }
+.formlyWrapper-Dark h1
+	{
+	font-size:16px;
+	color:#fff;
+	}
+.formlyWrapper-Dark h2
+	{
+	font-size:13px;
+	color:#ddd;
+	}
+.formlyWrapper-Dark hr
+	{
+	background:#222;
+	color:#222;
+	border:1px solid #222;
+	}
+
+
+
+
+	
+/* Standards for all themes */	
+.formlyPrefix
+	{
+	position:absolute;
+	float:left;
+	z-index:9999;
+	display:none;
+	}
+.formlyInvalid, .formlyRequired
+	{
+	border-radius:4px;
+	padding:5px 10px;
+	font-weight:bold;
+	font-size:12px;
+	display:none;
+	margin:5px 0;
+	}
+.formlyInvalid
+	{
+	background: rgba(255, 82, 82, 0.58);
+        color: #FFFCFC;
+        border: 2px solid rgba(255, 82, 82, 0.38);
+            /* text-shadow: 0px -1px 0px #004D40; */
+            font-size: 15px;
+            width: 507px;
+            height: 12px;
+	}
+.formlyRequired
+	{
+	background: rgba(255, 82, 82, 1);
+            color: #fff;
+            border: 5px solid rgba(255, 82, 82, 0.38);
+            /* text-shadow: 0px -1px 0px #004D40; */
+            font-size: 15px;
+            width: 500px;
+            height: 12px;
+	}

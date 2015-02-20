@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dentista</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/dentista.css" rel="stylesheet" type="text/css" />
+        <script src="js/jQuery.js" type="text/javascript"></script>
+        <script>
+           $(document).ready(function(){
+               $(".lista ul ul").css({
+                display:"none" 
+               }); 
+               $(".lista li").hover(function(){
+                   $(this).find("ul").stop(true, true).slideDown("slow");
+               }, function(){
+                   $(this).find("ul").stop(true, true).slideUp("slow");
+              });
+            });
+            function cargar(div, desde)
+            {
+                $(div).load(desde);
+            }
+        </script>
+    </head>
+    <body>
+        
+            <div class="barra">
+                <p id="pa">Medical</p>
+                <!--<div class="csboton">Cerrar Sesion &nbsp;<img src="css/imagen/exit.png" alt="" width="20" height="22"/></div>-->
+            </div>
+            <div class="menu">
+                <div class="lista">
+                    <ul>
+                        <li>    <a class="listitem"><h2><img src="css/imagen/user3.png" alt="" width="20" height="22"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dentistas</h2></a>
+                            <ul>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','AltayCambioDent.html')"><h2>Alta</h2></a></li>
+                                 <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','CambioD.html')"><h2>Cambio</h2></a></li>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','BajaDent.html')"><h2>Baja</h2></a></li>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','ConsultaDent.html')"><h2>Consulta</h2></a></li>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','ConsultaGeneralDent.html')"><h2>Consulta General</h2></a></li>
+                            </ul>
+                        </li>               
+                        <li>    <a class="listitem"><h2><img src="css/imagen/as.png" alt="" width="20" height="22"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alumnos</h2></a>
+                            <ul>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','AltayCambioD.html')"><h2>Alta</h2></a></li>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','CambioA.html')"><h2>Cambio</h2></a></li>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','BajaD.html')"><h2>Baja</h2></a></li>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','ConsultaD.html')"><h2>Consulta</h2></a></li>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','ConsultaGeneral.html')"><h2>Consulta General</h2></a></li>
+                            </ul>
+                        </li>
+                        <li>    <a class="listitem"><h2><img src="css/imagen/accessibility.png" alt="" width="20" height="22"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consultas</h2></a>
+                            <ul>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','laconsulta.html')"><h2>Nueva Consulta</h2></a></li>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','ConsultaC.html')"><h2>Historial Alumno</h2></a></li>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','ConsultaGeneralC.html')"><h2>Reporte de Consultas</h2></a></li>
+                            </ul>
+                        </li>
+                        <li>     <a class="listitem"><h2><img src="css/imagen/calendar.png" alt="" width="20" height="22"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Citas</h2></a>
+                             <ul>
+                                 <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','calendario.jsp')"><h2>Calendario</h2></a></li>
+                                <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','subiractividad.html')"><h2>Subir Actividad</h2></a></li>
+                            </ul>
+                        </li>
+                        <li>    <a class="listitem"><h2> <img src="css/imagen/medkit.png" alt="" width="20" height="22"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Almacen</h2></a>
+                            <ul>
+                                 <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','AltayCambioA.html')"><h2>Alta</h2></a></li>
+                                 <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','CambioAl.html')"><h2>Cambio</h2></a></li>
+                                 <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','BajaA.html')"><h2>Baja</h2></a></li>
+                                 <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','ConsultaA.html')"><h2>Consulta</h2></a></li>
+                                 <li><a class="listitem bsecun" href="#" style="text-decoration: none" onclick="cargar('div.contenido','ConsultaGeneralA.html')"><h2>Consulta General</h2></a></li>
+                            </ul>
+                        </li>
+                        <li>    <a class="listitem"  href="#" style="text-decoration: none" onclick="cargar('div.contenido','InfoSana.html')"><h2><img src="css/imagen/infosana.png" alt="" width="20" height="22" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InfoSana</h2></a></li>
+                        <li>    <a class="listitem" href="#" style="text-decoration: none" onclick="cargar('div.contenido','salir.html')"><h2><img src="css/imagen/exit.png" alt="" width="20" height="22" />Cerrar Sesion</h2></a></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="open" style="display: block"> 
+            
+                    <div class="contenido">
+                       <div class="tittle" style="background-color: #009688; height: 100%; padding-bottom: 7%">
+                          <p>Bienvenid@ a</p>
+                          <center>
+                              <img src="css/imagen/Letra.jpg" width="400px" height="170px" alt=""/>
+                          </center>
+                       </div>
+                    </div>
+                
+        </div>
+        
+    </body>
+</html>

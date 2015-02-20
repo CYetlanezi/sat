@@ -1,0 +1,205 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/10/2014, 01:14:30 PM
+    Author     : Claudia
+*/
+@import url(http://fonts.googleapis.com/css?family=Amaranth);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Cinzel:400,700);
+
+body {
+  background-color: #f2f4f6;
+  font-family: 'Raleway', sans-serif;
+  text-align: center; }
+
+.contenedor {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  background-color: white;
+  background-image: url("imagen/logoyletra.png");
+  background-image: -webkit-image-set(url("imagen/logoyletra.png") 1x, url("imagen/logoyletra.png") 2x);
+  width: 550px;
+  height: 198px;
+  text-indent: -9999px;
+  white-space: nowrap;
+  margin: 30px auto; }
+
+h2 {
+  font-size: 21px;
+  font-family: 'Cinzel', serif;
+  color: #A9B2BC;
+  line-height: 8px;
+  font-weight: 300;
+  text-align: center;
+  display: block; }
+
+p {
+  font-size: 65px;
+  color: #3D3D3D;
+  font-family: 'Amaranth', sans-serif;
+  margin-top: 5px;
+  text-align: center;
+  position: relative; }
+
+p2 {
+  max-width: 826px;
+  margin: 25px auto;
+  font-size: 15px;
+  font-weight: 300;
+  color: #848D94;
+  line-height: 22px;
+  text-align: left; }
+
+  p.center {
+    text-align: center; }
+  
+  p a:hover {
+     font-size: 36px; }
+  
+    p a.azul{
+      color: #5eaade; }
+
+.showcase {
+  background-color: white;
+  padding: 17px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative; }
+  @media all and (max-width: 865px) {
+    .showcase {
+      margin: 5px auto;
+      padding: 40px 16px; } }
+  @media all and (max-width: 440px) {
+    .showcase {
+      width: auto; } }
+  .inicio {
+      width: 530px;
+      height: 72px;
+       background-color: white;
+       margin-top: 3px;
+       margin-bottom: 3px;
+  }
+  .todo {
+      background-color: white;
+      padding: 16px;
+      margin-top: 27px;
+      margin-bottom: 27px;
+      border: 4px solid #ddd;
+     border-radius: 3px;
+  }
+  
+
+.button {
+  -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  background-color: #EEE;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZiZmJmYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #e1e1e1));
+  background: -moz-linear-gradient(top, #fbfbfb, #e1e1e1);
+  background: -webkit-linear-gradient(top, #fbfbfb, #e1e1e1);
+  background: linear-gradient(bottom, #fbfbfb, #e1e1e1);
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  border: 1px solid #d4d4d4;
+  height: 32px;
+  line-height: 30px;
+  padding: 0px 25.6px;
+  font-weight: 300;
+  font-size: 35px;
+  font-family: 'Raleway', serif;
+  color: #666;
+  text-shadow: 0 1px 1px white;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover, .button:focus, .button:active, .button.is-active, .button.active {
+  text-decoration: none;
+}
+/* line 48, ../scss/partials/_buttons.scss */
+.button:hover, .button:focus {
+  color: #008489;
+  background-color: #008489;
+  
+}
+/* line 53, ../scss/partials/_buttons.scss */
+.button:active, .button.is-active, .button.active {
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
+  background: #008489;
+  color: #008489;
+}
+/* line 59, ../scss/partials/_buttons.scss */
+.button:focus {
+  outline: none;
+}
+
+/* line 65, ../scss/partials/_buttons.scss */
+input.button, button.button {
+  height: 50px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.button-rounded {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.button-flat-primary {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background: #00A1CB;
+  color: #FFF;
+  text-shadow: none;
+  border: none;
+}
+/* line 341, ../scss/partials/_buttons.scss */
+.button-flat-primary:hover, .button-flat-primary:focus {
+  color: #FFF;
+  background: #00a080;
+}
+/* line 345, ../scss/partials/_buttons.scss */
+.button-flat-primary:active, .button-flat-primary.is-active, .button-flat-primary.active {
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  background: #1495b7;
+  color: #00647f;
+}
+/* line 350, ../scss/partials/_buttons.scss */
+.button-flat-primary.disabled {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+.colormedical {
+    background-color: #008489;
+}

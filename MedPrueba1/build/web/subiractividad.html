@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jQuery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/formly.js"></script>
+        <link rel="stylesheet" href="css/formly.css" type="text/css" />
+        <script>
+            $(document).ready(function() { 
+
+                    $('#Info').formly({'theme':'Dark'}, function(e) { 
+		
+                    $('.callback').html(e);
+                });
+            });
+             function dias(mes){
+            subir.dia.options.length = 1;
+            meses = new Array("ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE");
+            dias31 = new Array ("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31");
+            dias30 = new Array ("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30");
+            dias29 = new Array ("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29");
+            dias28 = new Array ("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28");
+            
+            var añod = new Date;
+            if(subir.año.value !== ""){
+                if(subir.año.value >= añod.getFullYear()){
+                    if(mes.selectedIndex === 1 || mes.selectedIndex === 3 || mes.selectedIndex === 5 || mes.selectedIndex === 7 || mes.selectedIndex === 8 || mes.selectedIndex === 10 || mes.selectedIndex === 12){
+                        for (conta=0; conta<dias31.length; conta++){
+                                subir.dia.options[conta+1]= new Option(dias31[conta]);
+                        }
+                    }
+                    else{
+                        if(mes.selectedIndex === 4 || mes.selectedIndex === 6 || mes.selectedIndex === 9 || mes.selectedIndex === 11){
+                            for (conta=0; conta<dias30.length; conta++){
+                                    subir.dia.options[conta+1]= new Option(dias30[conta]);
+                            }
+                        }
+                        else{
+                            if(mes.selectedIndex === 2 && subir.año.value % 4 === 0){
+                                for (conta=0; conta<dias29.length; conta++){
+                                        subir.dia.options[conta+1]= new Option(dias29[conta]);
+                                }
+                            }
+                            else{
+                                if(mes.selectedIndex === 2){
+                                    for (conta=0; conta<dias28.length; conta++){
+                                            subir.dia.options[conta+1]= new Option(dias28[conta]);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                else{
+                    alert("No puede consultar años del pasado");
+                    subir.año.value = "";
+                }
+            }
+            else{
+                alert("Seleccione primero un año");
+                subir.mes.selectedIndex = 0;
+            }
+        }
+        
+        function soloEnteros(e)
+	  {
+		  var keynum;
+		  if(window.event)
+		  {
+			  keynum = e.keyCode;
+		  }
+			else
+				   if(e.which)
+			   {
+				   keynum=e.which;
+			   }
+		  if((keynum >= 48 && keynum <= 57)||keynum === 8)
+		  {
+			return true;
+		  }
+		  else{
+			  return false;
+		  }
+	  }
+        </script>
+        <link rel="stylesheet" href="formly.css" type="text/css" />
+        </head>
+        <body>
+        
+            <div class="tittle" style="background-color: #CDDC39">
+                <p style="margin-top: 0px;">Nueva Actividad</p>
+            </div>
+            
+       <form id="Info" action = "base" method = "post">
+            Fecha de la actividad:
+        
+            Año (aaaa): <input type="text" name="año" onkeypress="return soloEnteros(event);" onchange="dias(mes);" maxlength="4">
+
+            Mes: <select name="mes" onchange="dias(this);">
+                <option value="null">Seleccione un mes</option>
+                <option value="ENERO">ENERO</option>
+                <option value="FEBRERO">FEBRERO</option>
+                <option value="MARZO">MARZO</option>
+                <option value="ABRIL">ABRIL</option>
+                <option value="MAYO">MAYO</option>
+                <option value="JUNIO">JUNIO</option>
+                <option value="JULIO">JULIO</option>
+                <option value="AGOSTO">AGOSTO</option>
+                <option value="SEPTIEMBRE">SEPTIEMBRE</option>
+                <option value="OCTUBRE">OCTUBRE</option>
+                <option value="NOVIEMBRE">NOVIEMBRE</option>
+                <option value="DICIEMBRE">DICIEMBRE</option>
+            </select>
+
+            Dia:<select name="dia">
+                <option value="null">Seleccione un dia</option>
+            </select>
+
+            <br><br><br>
+            Actividad a realizar por los alumnos
+            <br>
+            <textarea name="actividad"></textarea>
+            <input type="submit" name="subir" value="subir">
+        </form>
+            
+        </body>
+</html>
+
+-->
+<html>
+    <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jQuery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/formly.js"></script>
+        <link rel="stylesheet" href="css/formly.css" type="text/css" />
+    <script type="text/javascript">
+        function dias(mes){
+            subir.dia.options.length = 1;
+            meses = new Array("ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE");
+            dias31 = new Array ("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31");
+            dias30 = new Array ("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30");
+            dias29 = new Array ("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29");
+            dias28 = new Array ("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28");
+            
+            var añod = new Date;
+            if(subir.anio.value !== ""){
+                if(subir.anio.value >= añod.getFullYear()){
+                    if(mes.selectedIndex === 1 || mes.selectedIndex === 3 || mes.selectedIndex === 5 || mes.selectedIndex === 7 || mes.selectedIndex === 8 || mes.selectedIndex === 10 || mes.selectedIndex === 12){
+                        for (conta=0; conta<dias31.length; conta++){
+                                subir.dia.options[conta+1]= new Option(dias31[conta]);
+                        }
+                    }
+                    else{
+                        if(mes.selectedIndex === 4 || mes.selectedIndex === 6 || mes.selectedIndex === 9 || mes.selectedIndex === 11){
+                            for (conta=0; conta<dias30.length; conta++){
+                                    subir.dia.options[conta+1]= new Option(dias30[conta]);
+                            }
+                        }
+                        else{
+                            if(mes.selectedIndex === 2 && subir.anio.value % 4 === 0){
+                                for (conta=0; conta<dias29.length; conta++){
+                                        subir.dia.options[conta+1]= new Option(dias29[conta]);
+                                }
+                            }
+                            else{
+                                if(mes.selectedIndex === 2){
+                                    for (conta=0; conta<dias28.length; conta++){
+                                            subir.dia.options[conta+1]= new Option(dias28[conta]);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                else{
+                    alert("No puede consultar años del pasado");
+                    subir.anio.value = "";
+                }
+            }
+            else{
+                alert("Seleccione primero un año");
+                subir.mes.selectedIndex = 0;
+            }
+        }
+        
+        function soloEnteros(e)
+	  {
+		  var keynum;
+		  if(window.event)
+		  {
+			  keynum = e.keyCode;
+		  }
+			else
+				   if(e.which)
+			   {
+				   keynum=e.which;
+			   }
+		  if((keynum >= 48 && keynum <= 57)||keynum === 8)
+		  {
+			return true;
+		  }
+		  else{
+			  return false;
+		  }
+	  }
+         $(document).ready(function() { 
+
+                    $('#Info').formly({'theme':'Dark'}, function(e) { 
+		
+                    $('.callback').html(e);
+                });
+            });
+            function v (a){
+                 var keynum;
+                 if (window.event){ keynum = a.keyCode; }
+                 if (a.which){ keynum = a.which; }
+                 if ((keynum >= 33 && keynum <= 43) || (keynum >= 58 && keynum <= 64)){ return false; }
+                 else { return true; }
+             }
+    </script>
+    <link rel="stylesheet" href="formly.css" type="text/css" />
+        </head>
+        <body>
+        
+            <div class="tittle" style="background-color: #CDDC39">
+                <p style="margin-top: 0px;">Nueva Actividad</p>
+            </div>
+    
+        <form id="Info" name="subir" method="post" action="subirb.jsp">
+            <b>Fecha de la actividad:</b>
+            <br>
+            <br>
+            <br>
+            <img src="css/imagen/calendar_2-512.png"  width="40px" height="40px " >&nbsp;&nbsp;&nbsp;&nbsp;
+            Año (aaaa): <input type="text" name="anio" onchange="dias(mes);" maxlength="4"  onkeypress = 'return soloEnteros(event); return v(event)' required> 
+
+            Mes: <select name="mes" onchange="dias(this);">
+                <option value="null">Seleccione un mes</option>
+                <option value="ENERO">ENERO</option>
+                <option value="FEBRERO">FEBRERO</option>
+                <option value="MARZO">MARZO</option>
+                <option value="ABRIL">ABRIL</option>
+                <option value="MAYO">MAYO</option>
+                <option value="JUNIO">JUNIO</option>
+                <option value="JULIO">JULIO</option>
+                <option value="AGOSTO">AGOSTO</option>
+                <option value="SEPTIEMBRE">SEPTIEMBRE</option>
+                <option value="OCTUBRE">OCTUBRE</option>
+                <option value="NOVIEMBRE">NOVIEMBRE</option>
+                <option value="DICIEMBRE">DICIEMBRE</option>
+            </select>
+
+            Dia:<select name="dia">
+                <option value="null">Seleccione un dia</option>
+            </select>
+            
+            <br><br><br>
+            <b>Actividad a realizar por los alumnos</b>
+            <br>
+            <br>
+            <textarea name="actividad" rows="8" cols="35" style="margin: 15px;"></textarea>
+            <center>
+            <input type="submit" name="subir" value="subir">
+            </center>
+        </form>
+    </body>
+</html>

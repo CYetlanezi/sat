@@ -1,0 +1,210 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/10/2014, 04:43:34 PM
+    Author     : Claudia
+*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:500);
+@import url(http://fonts.googleapis.com/css?family=Convergence);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+.open {
+    background-color: #dddddd;
+    position: absolute;
+    top: 16%;
+    left: 22.4%;
+    width: 67.5%;
+    min-height: 79%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.barra {
+    position: fixed;
+    min-width: 100%;
+    height: 16%;
+    border: 0;
+    background-color: #009688;
+    border-color: #26a69a;
+    top: 0;
+    border-width:1px;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    margin-bottom: 10px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+h1 {
+  font-size: 27px;
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  color: #A9B2BC;
+  line-height: 25px;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+}
+
+h2 {
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  margin: 8px;
+}
+
+h3 {
+  font-size: 16px;
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  color: #2fe688;
+  line-height: 25px;
+  font-weight: 300;
+  text-align: center;
+  display: block; }
+
+
+#pa {
+  font-size: 55px;
+  color: white;
+  font-family: 'Convergence', sans-serif;
+  margin-top: 20px;
+  margin-left: 100px;
+  text-align: left;
+  position: relative; 
+  padding-top: 0px;
+  padding-left: 80px;
+  width: 0;
+  height: 0;
+}
+.menu {
+   position: fixed;
+    top: 16%;
+    left: 0;
+    width: 18%;
+    overflow: hidden;
+    min-height: 100%;
+    min-width: 100px;
+    background: white;
+    z-index: 200;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.tittle {
+      width: 100%;
+      height: 150px;
+      background-color: #4EB53F;
+  }
+  
+   p {
+      color: white;
+      font-family: 'Pacifico', cursive;
+      font-size: 50px;
+      text-align: center;
+      margin: 7px;
+  }
+
+ul {
+    list-style: none;
+    list-style-image: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+
+.contornomenu {
+      background-color: white;
+  padding: 4px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative; }
+  @media all and (max-width: 86px) {
+    .contornomenu {
+      margin: 5px auto;
+      padding: 4px 2px; } }
+  @media all and (max-width: 440px) {
+    .contornomenu {
+      width: auto; } }
+
+
+.lista {
+        
+        opacity: 0.8; 
+        font-family: museo-slab, Georgia, "Times New Roman", Times, serif;
+        margin-bottom: 20px;
+        padding-left: 0;
+        display: block;
+}
+
+.listitem {
+    border-top-right-radius: 9px;
+    border-top-left-radius: 11px;
+    border-bottom-right-radius: 11px
+}
+
+a.listitem {
+color: #555555;
+}
+.listitem {
+position: relative;
+display: block;
+margin-bottom: 14px;
+background-color: #ffffff;
+border: 1px solid #dddddd;
+}
+.bsecun {
+background-color: #00BA9A;
+}
+.listitem:hover{
+    background-color: #dddddd;
+    font-size: 20px;
+    font-family: "Helvetica Neue",Helvetica,sans-serif;
+    color: #dddddd;; 
+}
+h2:hover{
+    font-size: 20px;
+    font-family: "Helvetica Neue",Helvetica,sans-serif;
+    color:black; 
+}
+:before, :after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.margen {
+    background-color: white;
+    min-height: 400px;
+}
+.csboton {
+   
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 80%;
+    margin-right: 5%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #009688;
+}
+.csboton:hover{
+    background-color: #dddddd;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}

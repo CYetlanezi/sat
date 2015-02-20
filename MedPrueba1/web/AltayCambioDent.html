@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jQuery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/formly.js"></script>
+        <link rel="stylesheet" href="css/formly.css" type="text/css" />
+        <script>
+            $(document).ready(function() { 
+
+                    $('#Info').formly({'theme':'Dark'}, function(e) { 
+		
+                    $('.callback').html(e);
+                });
+            });
+            function cargar(div, desde)
+            {
+                $(div).load(desde);
+            }
+            function v (a){
+                 var keynum;
+                 if (window.event){ keynum = a.keyCode; }
+                 if (a.which){ keynum = a.which; }
+                 if ((keynum >= 33 && keynum <= 43) || (keynum >= 58 && keynum <= 64)){ return false; }
+                 else { return true; }
+             }
+            function soloEnteros(a){
+                var keynum;
+                if (window.event){
+                    keynum = a.keyCode; 
+                }
+                if (a.which){
+                    keynum = a.which; 
+                }
+                if (((keynum >= 48 && keynum <= 57) || (keynum == 8)) && (keynum != 86)){
+                    return true; 
+                }
+                else {
+                    return false; 
+                }
+            }
+            
+              function soloLetras(a){
+                  var keynum;
+                if (window.event){
+                    keynum = a.keyCode; 
+                }
+                if (a.which){
+                    keynum = a.which; 
+                }
+                if ((keynum >= 97 && keynum <= 122) || (keynum >= 65 && keynum <= 90) || (keynum == 8) || (keynum == 32) || (keynum >= 160 && keynum <= 163)){
+                    return true; 
+                }
+                
+                else {
+                    return false; 
+                }
+            }
+            
+        </script>
+        <link rel="stylesheet" href="formly.css" type="text/css" />
+        </head>
+        <body>
+        
+            <div class="tittle" style="background-color: #8BC34A">
+                <p style="margin-top: 0px;">Registro de Dentistas</p>
+            </div>
+            
+            <form id="Info"  action = "http://127.0.0.1:39055/MedPrueba1Server/basedentista" method = "post">
+                    <img src="css/imagen/profile.png" alt=""/>
+                    Numero de Trabajador
+                    <input type="text" name="ntrabajador" require="true" label="Numero de Trabajador" size="30" style="margin:15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    
+                    <br>
+                    <br>
+                    <img src="css/imagen/key2.png" alt=""/>
+                    Contraseña:
+                    <input type="password" name="con" require="true" label="Contraseña" style="margin:15px;" size="29" onkeypress = 'return v(event)' required> 
+                    Confirmar Contraseña:
+                    <input type="password" name="ccon" match="con" label="Contraseña" size="29" onkeypress = 'return v(event)' required />
+                    <br>
+                    Apellido Paterno:
+                    <input type="text" name="paterno" require="true" label="Apellido Paterno" size="29" style="margin:15px;" onkeypress = 'return soloLetras(event); return v(event) ' required> 
+                    Apellido Materno:
+                    <input type="text" name="materno" require="true" label="Apellido Materno" size="29" style="margin: 15px;" onkeypress = 'return soloLetras(event); return v(event)' required> 
+                    <br>
+                    Nombre(s):
+                    <input type="text" name="nombre" require="true" label="Nombre"  size="30" style="margin: 15px;"onkeypress = 'return soloLetras(event); return v(event)' required>  
+                    <br>
+                    <img src="css/imagen/man.png" width="20px" height="20px " alt=""/>
+                    <img src="css/imagen/woman.png" width="20px" height="20px" alt=""/>
+                    Género:
+                    <select name="genero">
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    </select>
+                    <br>
+                    <img src="css/imagen/pushpin.png" alt=""/>
+                    Número de Seguridad Social:
+                    <input type="text" require="true" label="Número de Seguridad Social" name="nsocial" size="27" style="margin: 15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <br>
+                    <img src="css/imagen/user4.png" alt=""/>
+                    Antigüedad(meses):
+                    <input type="text" name="anti"  require="true" label="Antigüedad" size="30" style="margin: 15px;" onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <br>
+                    <img src="css/imagen/eye.png" alt=""/>
+                    Cédula Profesional:
+                    <input type="text" name="cedula" require="true" label="Cédula" size="27" style="margin: 15px;"  onkeypress = 'return soloEnteros(event); return v(event)' required> 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;Horario:
+                    <br>
+                    <textarea name="horario" rows="8" cols="35" style="margin: 15px;"></textarea>
+                    <br>
+                    <center>
+                        <input type="submit" value="Alta" name="boton"><input type="reset" value="Limpiar" />
+                    </center>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </form>
+            
+        </body>
+</html>

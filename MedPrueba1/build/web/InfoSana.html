@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jQuery.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/formly.js"></script>
+        <link rel="stylesheet" href="css/formly.css" type="text/css" />
+        <script>
+            $(document).ready(function() { 
+
+                    $('#Info').formly({'theme':'Dark'}, function(e) { 
+		
+                    $('.callback').html(e);
+                });
+            });
+        </script>
+        <link rel="stylesheet" href="formly.css" type="text/css" />
+        </head>
+        <body>
+        
+            <div class="tittle" style="background-color: #607D8B">
+                <p style="margin-top: 0px;">Información Saludable</p>
+            </div>
+            <form id="Info">
+                <center>
+                 <img src="css/imagen/publi.png" alt=""/>
+                 <br>
+                    <br>                    
+                    <input type="submit" name="boton" value="Publicar"/>
+                </center>
+            </form>
+            
+        
+        </body>
+</html>
